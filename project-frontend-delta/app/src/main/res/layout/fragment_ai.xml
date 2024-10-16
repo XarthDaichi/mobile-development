@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".view.ai.AIFragment">
+
+    <LinearLayout
+        android:id="@+id/fragment_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/AI_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="15sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/syne_semibold"
+            android:text="@string/ai_title"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+    </LinearLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/red_hat_text"
+            android:maxEms="25"
+            android:text="@string/ai_main_page_text"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="25sp"
+            app:cardBackgroundColor="@color/dark_gray"
+            app:cardCornerRadius="28sp">
+
+            <EditText
+                android:id="@+id/search_field"
+                android:layout_width="280sp"
+                android:layout_height="48sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/red_hat_text"
+                android:hint="@string/search_hint"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:imeOptions="actionSearch"
+                android:textColorHint="@color/gray_white"
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck" />
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15sp"
+                android:background="@color/dark_gray"
+                android:contentDescription="@string/search_hint"
+                android:src="@drawable/ic_search_24dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!--<Button
+            android:id="@+id/button"
+            android:layout_width="270sp"
+            android:layout_height="50sp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="100sp"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/red_hat_text"
+            android:text="@string/ai_upload_photo_button"
+            android:textColor="@color/white"
+            app:cornerRadius="100sp" />-->
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

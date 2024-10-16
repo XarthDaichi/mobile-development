@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".view.settings.SettingsFragment">
+
+    <LinearLayout
+        android:id="@+id/fragment_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/settings_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="15sp"
+            android:fontFamily="@font/syne_semibold"
+            android:text="@string/settings_header"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logout_card"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/gray"
+            app:cardCornerRadius="0sp"
+            app:cardElevation="0sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="8sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/settingsItemIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_logout_24" />
+
+                <TextView
+                    android:id="@+id/settingsItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15sp"
+                    android:fontFamily="@font/red_hat_text_medium"
+                    android:gravity="center"
+                    android:text="@string/logout"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--<androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/settings_items_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+    </LinearLayout>
+
+</LinearLayout>

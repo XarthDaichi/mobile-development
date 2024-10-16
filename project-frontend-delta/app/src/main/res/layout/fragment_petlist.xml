@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".view.petlist.PetListFragment">
+
+    <LinearLayout
+        android:id="@+id/fragment_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/app_name_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="15sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/syne_semibold"
+            android:text="@string/app_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            app:drawableTint="@color/gray_white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<androidx.cardview.widget.CardView
+            android:id="@+id/pet_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            app:cardCornerRadius="12sp">
+
+            <ImageView
+                android:id="@+id/pet_image"
+                android:layout_width="310sp"
+                android:layout_height="450sp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/pet_image_description"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/pet_photo"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <LinearLayout
+                android:id="@+id/pet_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pet_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/red_hat_text_medium"
+                        android:text="@string/pet_name"
+                        android:textColor="@color/white"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/pet_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="10sp"
+                        android:fontFamily="@font/red_hat_text"
+                        android:text="@string/pet_age"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:ignore="TextContrastCheck" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/pet_breed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/red_hat_text"
+                    android:hyphenationFrequency="normal"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:text="@string/pet_breed"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>-->
+
+        <!--<LinearLayout
+            android:id="@+id/FAB_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/next_FAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/next_pet_FAB_description"
+                android:src="@drawable/ic_arrow_back_48dp"
+                app:backgroundTint="@color/blue"
+                app:fabCustomSize="80dp"
+                app:maxImageSize="40dp"
+                app:useCompatPadding="true"
+                tools:ignore="ImageContrastCheck" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/pet_info_FAB"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/pet_info_FAB_description"
+                android:src="@drawable/ic_info_48dp"
+                app:backgroundTint="@color/blue"
+                app:fabCustomSize="80dp"
+                app:maxImageSize="40dp"
+                app:useCompatPadding="true"
+                tools:ignore="ImageContrastCheck" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/like_pet_FAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/like_pet_FAB_description"
+                android:src="@drawable/ic_favorite_48dp"
+                app:backgroundTint="@color/orange"
+                app:fabCustomSize="80dp"
+                app:maxImageSize="40dp"
+                app:useCompatPadding="true"
+                tools:ignore="ImageContrastCheck" />
+        </LinearLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pets_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

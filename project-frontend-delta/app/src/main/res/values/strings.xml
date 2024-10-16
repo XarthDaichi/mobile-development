@@ -1,0 +1,51 @@
+<resources>
+    <string name="welcome">"Welcome to PetMatch!"</string>
+
+    <!--NavBar strings-->
+    <string name="title_petlist">Pets</string>
+    <string name="title_reports">Reports</string>
+    <string name="title_search">Search</string>
+    <string name="title_ai">AI</string>
+    <string name="title_settings">Settings</string>
+
+    <!--Pet List fragment strings-->
+    <string name="app_name">PetMatch</string>
+    <string name="pet_image_description">Pet picture</string>
+    <string name="next_pet_FAB_description">Next pet</string>
+    <string name="pet_info_FAB_description">Pet info</string>
+    <string name="like_pet_FAB_description">Like pet</string>
+    <string name="pet_name">Buddy</string>
+    <string name="pet_age">3 years old</string>
+    <string name="pet_breed">Nova Scotia Duck Tolling Retriever</string>
+
+    <!--Search fragment strings-->
+    <string name="search_hint">Search</string>
+    <string name="search_name">Search</string>
+
+    <!--AI fragment strings-->
+    <string name="ai_title">AI Assistant</string>
+    <string name="ai_main_page_text">
+        Here you can send the breed
+        of any animal you’d like to
+        adopt and, with the help of
+        Google Gemini, we’ll show you
+        how it’s like as a pet, common
+        health problems and similar
+        breeds
+    </string>
+    <string name="ai_upload_photo_button">Upload a Photo!</string>
+
+    <!--Settings fragment strings-->
+    <string name="settings_header">Settings</string>
+    <string name="logout">Log out</string>
+
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >=5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="prompt_email">Email / Username</string>
+    <string name="prompt_password">Password</string>
+
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+</resources>
